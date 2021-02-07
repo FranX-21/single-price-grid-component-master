@@ -1,0 +1,319 @@
+/* ---------- Fonts ---------- */
+/* ---------- Fonts ---------- */
+
+@font-face{
+    font-family: "karla1";
+    src: url("fonts/static/Karla-Regular.ttf");
+    /* font-weight: 400; */
+}
+
+@font-face{
+    font-family: "karla2";
+    src: url("fonts/static/Karla-Bold.ttf");
+    /* font-weight: 700; */
+}
+
+/* ---------- END Fonts ---------- */
+/* ---------- END Fonts ---------- */
+
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+
+#sec{
+    width: 635px;
+    height: 475px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "art-1 art-1"
+                         "art-2 art-3";
+    margin: 0px auto;
+    margin-top: 165px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #c8dae9;
+}
+
+.art-1{
+    height: 215px;
+    grid-area: art-1;
+    background-color: #ffffff;
+}
+.art-2{
+    grid-area: art-2;
+    height: 260px;
+    background-color: #2bb3b1;
+}
+.art-3{
+    height: 260px;
+    grid-area: art-3;
+    background-color: #4abebd;
+}
+
+.art-1 h1{
+    width: 220px;
+    font-size: 23px;
+    font-family: "karla2";
+    font-weight: 200;
+    color: #2bb3b1;
+    margin-left: 40px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.art-1 h2{
+    width: 365px;
+    font-size: 18px;
+    font-family: "karla2";
+    font-weight: 200;
+    color: hsl(71, 73%, 54%);
+    margin-left: 40px;
+    margin-bottom: -7px
+}
+
+.art-1 p{
+    width: 500px;
+    font-size: 15px;
+    font-family: "karla1";
+    font-weight: 400;
+    line-height: 25px;
+    color: #b0b3bb;
+    margin-left: 40px;
+}
+
+.art-2 h3{
+    width: 190px;
+    font-size: 18px;
+    font-family: "karla2";
+    font-weight: 200;
+    color: #effcfc;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.art-2 h4{
+    width: 150px;
+    font-size: 16px;
+    font-family: "karla1";
+    font-weight: 400;
+    color: #69dbdc;
+    margin-left: 45px;
+}
+
+span{
+    font-size: 30px;
+    font-family: "karla2";
+    font-weight: 400;
+    margin-right: 10px;
+    color: white;
+}
+
+.art-2 p{
+    width: 240px;
+    font-size: 16px;
+    font-family: "karla1";
+    font-weight: 400;
+    color: #effcfc;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+
+.art-2 button{
+    width: 240px;
+    height: 50px;
+    font-family: "karla2";
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px gray;
+    border: 0px solid transparent;
+    border-radius: 7px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+}
+
+.art-2 button:active{
+    transition: all 1ms;
+    background-color: yellowgreen;
+    box-shadow: 1px 1px 1px gray inset;
+}
+
+.art-3 h3{
+    width: 190px;
+    font-size: 18px;
+    font-family: "karla2";
+    font-weight: 200;
+    color: #effcfc;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.art-3 ul{
+    font-family: "karla1";
+    font-weight: 400;
+    color: #eee;
+    list-style: none;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+ .attribution { 
+    font-size: 13px; text-align: center; margin-top: 15px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
+/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONSIVE ---------- */
+
+@media all and (max-width: 650px){
+
+    #sec{
+        width: 310px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "art-1"
+                             "art-2"
+                             "art-3";
+        margin: 0px auto;
+        margin-top: 70px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 5px 5px 15px #c8dae9;
+    }
+
+    .art-1{
+        height: 270px;
+        grid-area: art-1;
+        background-color: #ffffff;
+    }
+    .art-2{
+        grid-area: art-2;
+        height: 270px;
+        background-color: #2bb3b1;
+    }
+    .art-3{
+        height: 270px;
+        grid-area: art-3;
+        background-color: #4abebd;
+    }
+
+    .art-1 h1{
+        width: 220px;
+        font-size: 20px;
+        font-family: "karla2";
+        font-weight: 200;
+        color: #2bb3b1;
+        margin-left: 25px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .art-1 h2{
+        width: 230px;
+        font-size: 15px;
+        font-family: "karla2";
+        font-weight: 200;
+        color: hsl(71, 73%, 54%);
+        margin-left: 25px;
+        margin-bottom: 0px
+    }
+
+    .art-1 p{
+        width: 275px;
+        font-size: 14px;
+        font-family: "karla1";
+        font-weight: 400;
+        line-height: 25px;
+        color: #b0b3bb;
+        margin-left: 25px;
+    }
+
+    .art-2 h3{
+        width: 190px;
+        font-size: 18px;
+        font-family: "karla2";
+        font-weight: 200;
+        color: #effcfc;
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+
+    .art-2 h4{
+        width: 150px;
+        font-size: 16px;
+        font-family: "karla1";
+        font-weight: 400;
+        color: #69dbdc;
+        margin-left: 25px;
+    }
+
+    span{
+        font-size: 30px;
+        font-family: "karla2";
+        font-weight: 400;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .art-2 p{
+        width: 240px;
+        font-size: 16px;
+        font-family: "karla1";
+        font-weight: 400;
+        color: #effcfc;
+        margin-left: 25px;
+        margin-top: -15px;
+    }
+
+    .art-2 button{
+        width: 265px;
+        height: 50px;
+        font-family: "karla2";
+        font-size: 15px;
+        margin-left: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 8px gray;
+        border: 0px solid transparent;
+        border-radius: 7px;
+        color: white;
+        background-color: hsl(71, 73%, 54%);
+    }
+
+    .art-2 button:active{
+        transition: all 1ms;
+        background-color: yellowgreen;
+        box-shadow: 1px 1px 1px gray inset;
+    }
+
+    .art-3 h3{
+        width: 190px;
+        font-size: 18px;
+        font-family: "karla2";
+        font-weight: 200;
+        color: #effcfc;
+        margin-left: 25px;
+        margin-top: 30px;
+    }
+
+    .art-3 ul{
+        font-family: "karla1";
+        font-weight: 400;
+        color: #eee;
+        list-style: none;
+        line-height: 20px;
+        font-size: 14px;
+        margin-left: -15px;
+    }
+
+}
+
+/* ---------- END RESPONSIVE ---------- */
+/* ---------- END RESPONSIVE ---------- */
